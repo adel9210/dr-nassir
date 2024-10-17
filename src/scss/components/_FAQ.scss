@@ -1,0 +1,85 @@
+.component-FAQ {
+  &__accordion {
+    .card {
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      font-size: rem(18);
+      color: $text-color-dark;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      border: 0;
+      background: transparent;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 400;
+      padding: 0;
+      // margin-bottom: 20px;
+
+      &:hover,
+      &:focus-visible,
+      &:focus {
+        // color: $primary-color;
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+      }
+
+      &__text {
+        text-align: start;
+        margin-inline-end: 10px;
+      }
+
+      &[aria-expanded='true'] {
+        .component-FAQ__accordion__title__button {
+          background-color: $primary-color;
+          border-color: $primary-color;
+          &::after {
+            // @include addIcon($icon-down-arrow, 13px);
+            color: $color-white;
+            transform: rotate(180deg);
+            position: absolute;
+          }
+        }
+        .component-FAQ__accordion__title__text {
+          color: $text-black-color !important;
+        }
+      }
+
+      &__button {
+        min-width: 20px;
+        max-width: 20px;
+        min-height: 20px;
+        max-height: 20px;
+        border: 1px solid $text-color-dark;
+        border-radius: 50%;
+        color: $text-color-dark;
+        // font-family: $font-extra-bold;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline-start: 5px;
+        // background-color: $primary-color;
+        &::after {
+          @include addIcon($icon-down-arrow, 7px);
+        }
+      }
+    }
+
+    &__card {
+      background-color: $card-bg;
+      padding: 30px;
+      // margin-top: 60px;
+      // box-shadow: $main-box-shadow;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      & .component-FAQ__accordion__title__text {
+        font-size: rem(20);
+      }
+    }
+  }
+}

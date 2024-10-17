@@ -1,0 +1,13 @@
+body {
+  direction: #{$direction};
+  text-align: #{$left};
+  box-sizing: border-box;
+  color: $color-white;
+  overflow-x: hidden;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+html {
+  scroll-behavior: smooth;
+}

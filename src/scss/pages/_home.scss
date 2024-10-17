@@ -1,0 +1,44 @@
+.writings {
+  background-color: #284434;
+  padding: 60px 0;
+  position: relative;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__swiper {
+    margin-bottom: 10px;
+  }
+
+  &__swiper__controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+
+    .writings__swiper__controls--next, .writings__swiper__controls--prev {
+      display: flex;
+      width: 48px;
+      height: 48px;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 8px;
+      background: #375041;
+
+      .icon {
+        font-size: 20px;
+      }
+    }
+  }
+}

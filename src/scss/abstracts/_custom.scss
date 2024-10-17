@@ -1,0 +1,67 @@
+@import './variables';
+
+// CONTAINER
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1400px,
+);
+
+// BREAKPOINTS
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1500px,
+);
+
+// BUTTONS
+$btn-padding-y: 13px;
+$btn-padding-x: 20px;
+$btn-font-size: 14px;
+$btn-font-weight: bold;
+$btn-border-radius: 10px;
+
+$btn-padding-y-lg: 16px;
+$btn-padding-x-lg: 99px;
+$btn-border-radius-lg: 6px;
+
+// //  FONT FAMILY
+$fontFamily: 'Font-ARABIC';
+
+@if $direction == ltr {
+  $fontFamily: 'SCA-Font-ENGLISH';
+} @else {
+  $fontFamily: 'Font-ARABIC';
+}
+$font-family-base: $fontFamily !important;
+$font-weight-base: 400;
+// $font-size-base: 8rem;
+
+// FORM
+$form-group-margin-bottom: 30px;
+$input-height: 42px;
+
+// CARD
+$card-border-width: 0;
+$card-border-color: transparent;
+$modal-md: 800px !important;
+$modal-header-border-width: 0;
+$modal-footer-border-width: 0;
+$modal-inner-padding: 2rem;
+$modal-content-border-radius: 10px;
+
+.card {
+  box-shadow: $main-box-shadow;
+}
+
+// DROP DOWN
+$dropdown-spacer: 1rem;
+$dropdown-min-width: 15rem;
+$card-border-radius: 10px;
+
+@import '../../../node_modules/bootstrap/scss/bootstrap';

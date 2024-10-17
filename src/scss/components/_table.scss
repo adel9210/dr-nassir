@@ -1,0 +1,52 @@
+:root {
+  --row-background: #f3f5f7;
+}
+
+.utl-table {
+  background-color: $color-white;
+  thead {
+    background-color: var(--row-background);
+    text-align: center;
+    // border-radius: 10px;
+
+    th {
+      padding: 21px;
+      border: 0;
+      font-weight: 600;
+      color: $text-color;
+
+      &:first-child {
+        border-top-#{$left}-radius: 10px;
+        border-bottom-#{$left}-radius: 10px;
+      }
+
+      &:last-child {
+        border-top-#{$right}-radius: 10px;
+        border-bottom-#{$right}-radius: 10px;
+      }
+    }
+  }
+
+  tbody {
+    text-align: center;
+    tr {
+      td {
+        border: 0;
+        padding: 21px;
+        &:first-child {
+          border-top-#{$left}-radius: 10px;
+          border-bottom-#{$left}-radius: 10px;
+        }
+
+        &:last-child {
+          border-top-#{$right}-radius: 10px;
+          border-bottom-#{$right}-radius: 10px;
+        }
+      }
+
+      &:nth-child(even) {
+        background-color: var(--row-background);
+      }
+    }
+  }
+}

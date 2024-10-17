@@ -1,0 +1,27 @@
+.modal {
+  &-footer {
+    .btn {
+      margin-#{$left}: auto !important;
+      margin-#{$right}: 0 !important;
+    }
+  }
+
+  &-title {
+    font-weight: 600;
+    color: $text-color;
+  }
+
+  &-body {
+    p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    img {
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-right: 25px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.card {
+  // @extend .utl-card-hover;
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 20px;
+  }
+  &-text {
+    color: $color-dark;
+    line-height: 24px;
+  }
+}
+
+.component-card {
+  box-shadow: $main-box-shadow;
+  border-radius: 6px;
+  padding: 20px;
+  background-color: $color-white;
+
+  &__title {
+    color: $color-grey-dark;
+    font-weight: 600;
+    font-size: rem(16);
+    margin-bottom: 20px;
+  }
+}
+
+.component-list {
+  &__item {
+    color: $text-black-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &__label {
+      font-size: rem(14);
+    }
+
+    &__value {
+      font-weight: bold;
+    }
+  }
+}

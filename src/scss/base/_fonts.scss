@@ -1,0 +1,28 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// ARABIC FONT
+// -----------------------------------------------------------------------------
+
+@font-face {
+  font-family: 'Font-ARABIC';
+  src: url('../fonts/NeoSansArabicLight.woff');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Font-ARABIC';
+  src: url('../fonts/Neo_Sans_Arabic_Regular.woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Font-ARABIC';
+  src: url('../fonts/NeoSansArabicMedium.woff');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Font-ARABIC';
+  src: url('../fonts/NeoSansArabicBold.woff');
+  font-weight: 600;
+}

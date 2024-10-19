@@ -5,8 +5,8 @@ jQuery(document).ready(function ($) {
   const writings = new Swiper(".writings__swiper", {
     spaceBetween: 42,
     navigation: {
-      nextEl: ".writings__swiper__controls .writings__swiper__controls--next",
-      prevEl: ".writings__swiper__controls .writings__swiper__controls--prev",
+      nextEl: ".writings__swiper__controls .swiper-controls--next",
+      prevEl: ".writings__swiper__controls .swiper-controls--prev",
     },
     pagination: {
       clickable: true,
@@ -31,6 +31,70 @@ jQuery(document).ready(function ($) {
       991: {
         slidesPerView: 4,
         spaceBetween: 30,
+      },
+    },
+  });
+  const testimonials = new Swiper(".testimonials__swiper", {
+    spaceBetween: 42,
+    navigation: {
+      nextEl: ".testimonials__swiper__controls .swiper-controls--next",
+      prevEl: ".testimonials__swiper__controls .swiper-controls--prev",
+    },
+    pagination: {
+      clickable: true,
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is >= 991px
+      991: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+    },
+  });
+  const news = new Swiper(".news__swiper", {
+    spaceBetween: 42,
+    navigation: {
+      nextEl: ".news__swiper__controls .swiper-controls--next",
+      prevEl: ".news__swiper__controls .swiper-controls--prev",
+    },
+    pagination: {
+      clickable: true,
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is >= 991px
+      991: {
+        slidesPerView: 3,
+        spaceBetween: 42,
       },
     },
   });

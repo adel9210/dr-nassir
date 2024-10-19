@@ -1,0 +1,53 @@
+.testimonial {
+  background-color: #1B3425;
+  padding: 32px;
+  gap: 24px;
+  position: relative;
+  border-radius: 16px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
+    margin-bottom: 24px;
+  }
+
+  &__image {
+    width: 77px;
+    height: 77px;
+    border-radius: 77px;
+    border: 3px solid var(--G500, #297935);
+  }
+
+  &__info {
+    &__name {
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+
+    &__title {
+      font-size: 16px;
+      font-weight: 400;
+      opacity: 0.6;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 180%; /* 32.4px */
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/qoute.png");
+    background-size: cover;
+    top: 32px;
+    left: 32px;
+  }
+}

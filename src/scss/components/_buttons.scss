@@ -5,11 +5,27 @@
   border-radius: 8px;
   display: block;
   min-width: max-content;
-  padding: 8px 16px;
+  padding: 10px 16px;
   background-color: transparent;
+  background: var(--G600, #165B36);
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #165B36 ;
+  transition: all .3s;
+
+  &:hover {
+    background-color: transparent;
+    border-color: rgba(129, 129, 129, 0.30);;
+  }
 
   &--outline {
     border: 1px solid rgba(129, 129, 129, 0.30);
-    color: #fff;
+    background-color: transparent;
+
+    &:hover {
+      background-color: #165B36;
+        border-color: rgba(129, 129, 129, 0.30);;
+    }
   }
 }

@@ -39,3 +39,140 @@
     margin-top: 80px;
   }
 }
+
+
+.achievements {
+  background-color: #183021;
+  background-size: cover;
+  padding: 130px 0;
+
+  &__container {
+    display: flex;
+    column-gap: 30px;
+  }
+
+  &__header {
+    //margin-top: 147px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  &__title {
+  }
+
+  &__underline {
+    margin-top: 10px;
+    width: 56px;
+    height: 6px;
+  }
+
+  &__tabs {
+    //margin-top: 64px;
+
+    &__icon {
+      width: 68px;
+      height: 68px;
+      background-color: rgba(255, 253, 253, 0.09);
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+      transition: all .3s;
+      position: relative;
+
+      &:hover {
+        background-color: #297935;
+      }
+
+      &.active {
+        background-color: #297935;
+        position: relative;
+        &::after {
+          content: "";
+          width: 15px;
+          height: 15px;
+          transform: rotate(-45deg) translateY(50%);
+          position: absolute;
+          left: -8px;
+          flex-shrink: 0;
+          border-radius: 3px;
+          background: var(--G500, #297935);
+        }
+      }
+
+      .icon {
+        color: #fff;
+        font-size: 20px;
+        &:before {
+          color: currentColor;
+        }
+      }
+    }
+
+    .nav-item {
+      &:not(:last-child) {
+        .achievements__tabs__icon::before {
+          content: "";
+          opacity: 0.09;
+          background: #FFF;
+          width: 2px;
+          height: 40px;
+          left: 50%;
+          bottom: -30px;
+          position: absolute;
+        }
+      }
+    }
+
+    .nav-link {
+      padding: 10px;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &__content {
+    //margin-top: 64px;
+
+    &__info {
+      flex: 6;
+    }
+
+    &__tab {
+      display: flex;
+      column-gap: 60px;
+    }
+  }
+
+  &__image {
+    border-radius: 12px;
+    flex: 5;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__subtitle {
+    font-size: 32px;
+    line-height: 38.43px;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+  }
+
+  &__buttons {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+}

@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 40px;
+  column-gap: 20px;
   margin-top: 46px;
 
   &--next, &--prev {
@@ -19,9 +19,38 @@
     gap: 10px;
     border-radius: 8px;
     background: #375041;
+    transition: all .5s;
 
     .icon {
       font-size: 25px;
+      transition: all .5s;
+    }
+
+    &:hover {
+      background-color: $secondary-color;
+
+        .icon {
+           font-size: 30px;
+        }
     }
   }
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  opacity: .3;
+  background-color: #FFFFFF
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #FFAD4E;
+  opacity: 1;
+}
+
+.swiper-pagination {
+  position: static;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
 }

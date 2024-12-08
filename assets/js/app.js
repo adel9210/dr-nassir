@@ -8,8 +8,10 @@ jQuery(document).ready(function ($) {
       nextEl: ".writings__swiper__controls .swiper-controls--next",
       prevEl: ".writings__swiper__controls .swiper-controls--prev",
     },
+
     pagination: {
-      clickable: true,
+        clickable: true,
+        el: ".writings__swiper__controls .swiper-pagination",
     },
     breakpoints: {
       // when window width is >= 320px
@@ -42,6 +44,7 @@ jQuery(document).ready(function ($) {
     },
     pagination: {
       clickable: true,
+      el: ".testimonials__swiper__controls .swiper-pagination",
     },
     breakpoints: {
       // when window width is >= 320px
@@ -74,6 +77,7 @@ jQuery(document).ready(function ($) {
     },
     pagination: {
       clickable: true,
+      el: ".news__swiper__controls .swiper-pagination",
     },
     breakpoints: {
       // when window width is >= 320px

@@ -11,6 +11,82 @@
     }
   }
 
+  &__mobile {
+    display: none;
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: $secondary-color;
+    top: 0;
+    bottom: 0;
+
+    &__change-lang {
+      color: $primary-color;
+    }
+  }
+
+  &__mobile-nav {
+    display: none;
+    background-color: $secondary-color;
+    color: $color-grey;
+    // border-top: 1px solid $color-light-grey;
+    // border-bottom: 1px solid $color-light-grey;
+    box-shadow: $main-box-shadow;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+
+    @include media-breakpoint-down(lg) {
+      display: block;
+    }
+
+    &__burger-menu {
+      font-size: rem(25);
+      color: #fff;
+      margin-#{$right}: 20px;
+    }
+
+    &__logo img {
+      height: 45px;
+    }
+
+    &__account {
+      font-size: rem(25);
+      width: 45px;
+      height: 45px;
+      background-color: $primary-color;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $color-white;
+      margin-#{$right}: 20px;
+
+      &:hover {
+        color: $color-white !important;
+      }
+    }
+
+    &__account-dropdown {
+      padding: 10px;
+      a {
+        display: block;
+        text-align: #{$left};
+        margin-bottom: 10px;
+      }
+    }
+
+    #searchMobile {
+      width: 0;
+      height: 0;
+      transition: all 1s ease-in-out;
+    }
+  }
+
   &__navbar{
     &--top {
       background-color: #155934;
@@ -142,7 +218,27 @@
         line-height: 120%; /* 21.6px */
       }
     }
+
+    @include media-breakpoint-down(sm){
+     &--top {
+       display: none;
+       padding-inline-start: 0;
+
+       &__container {
+         padding: 0;
+         justify-content: center;
+       }
+       &__items, &__actions {
+         display: none;
+       }
+     }
+
+      &--bottom {
+       display: none;
+      }
+    }
   }
+
   &__hero {
     height: calc(100vh - 144px);
     background-image: url(../img/hero.png);
@@ -270,6 +366,22 @@
       }
     }
   }
-}
+
+  @include media-breakpoint-down(sm) {
+    &__logo {
+      display: none;
+      position: static;
+      margin-inline-end: 0;
+    }
+
+    &--inner {
+      padding-top: 100px;
+
+        &__title {
+            font-size: 30px;
+        }
+    }
+  }
+  }
 
 

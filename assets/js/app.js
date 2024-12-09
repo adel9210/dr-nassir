@@ -112,7 +112,7 @@ jQuery(document).ready(function ($) {
 
   const topButton = document.getElementById("gotToTopButton");
   const headerNav = document.querySelector(".header__mobile-nav");
-  topButton.addEventListener('click', topFunction)
+  topButton?.addEventListener('click', topFunction)
 
   window.onscroll = function () { scrollFunction(topButton, headerNav) };
 
@@ -175,7 +175,7 @@ function mobileNavMenuRender() {
   })
 
   $('.header__mobile .nav-link').on('click', function () {
-    $('.header__mobile').fadeOut('slow');
+    // $('.header__mobile').fadeOut('slow');
     $('body').removeClass('utl-opened');
   })
 }

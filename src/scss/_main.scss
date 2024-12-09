@@ -14,7 +14,12 @@
 @import "components/book", "components/testimonial", "components/swiper", "components/buttons", "components/news";
 
 // PAGES
-@import 'pages/home';
+@import 'pages/home', 'pages/sera';
 
 // LAYOUT
 @import 'layout/header', 'layout/footer';
+
+
+.main {
+  min-height: 100vh;
+}

@@ -33,12 +33,8 @@
   }
 
   &:after, &:before {
-    position: absolute;
-    content: "";
-    background: linear-gradient(90deg, rgba(62, 151, 76, 0) 0%, #3E974C 50%, rgba(62, 151, 76, 0) 100%);
+    @extend .section-line;
     bottom: 0;
-    width: 100%;
-    height: 6px;
   }
 
   &:before {

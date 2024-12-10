@@ -11,10 +11,11 @@
 @import "helper/utils";
 
 // COMPONENT
-@import "components/book", "components/testimonial", "components/swiper", "components/buttons", "components/news", "components/mobile-menu", 'components/pagination';
+@import "components/book", "components/testimonial", "components/swiper", "components/buttons", "components/news",
+"components/mobile-menu", 'components/pagination', 'components/social-links', 'components/gallery';
 
 // PAGES
-@import 'pages/home', 'pages/sera', 'pages/quotations', 'pages/praise';
+@import 'pages/home', 'pages/sera', 'pages/quotations', 'pages/praise', 'pages/news', 'pages/gallery';
 
 // LAYOUT
 @import 'layout/header', 'layout/footer';

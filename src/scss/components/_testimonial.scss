@@ -1,4 +1,4 @@
-.testimonial {
+.co-user-card {
   background-color: #1B3425;
   padding: 32px;
   gap: 24px;
@@ -49,5 +49,13 @@
     background-size: cover;
     top: 32px;
     left: 32px;
+  }
+
+  @include media-breakpoint-down(sm){
+    &:after {
+      top: 5px;
+      left: 5px;
+      opacity: .7;
+    }
   }
 }

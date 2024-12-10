@@ -11,7 +11,7 @@
 @import "helper/utils";
 
 // COMPONENT
-@import "components/book", "components/testimonial", "components/swiper", "components/buttons", "components/news", "components/mobile-menu";
+@import "components/book", "components/testimonial", "components/swiper", "components/buttons", "components/news", "components/mobile-menu", 'components/pagination';
 
 // PAGES
 @import 'pages/home', 'pages/sera', 'pages/quotations', 'pages/praise';

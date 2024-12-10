@@ -28,4 +28,10 @@
         border-color: rgba(129, 129, 129, 0.30);;
     }
   }
+
+  &--with-icon {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
 }

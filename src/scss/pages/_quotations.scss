@@ -1,0 +1,58 @@
+.quotations {
+  padding: 81px 0 75px 0;
+  background-color: #183021;
+  position: relative;
+
+  &:after {
+    @extend .section-line;
+    bottom: 0;
+  }
+
+  &__swiper {
+    &-wrapper {
+      border: 1.24px solid var(--G600, #165B36);
+      margin-top: 33px;
+      border-radius: 16px;
+      padding: 50px;
+      background-color: #23372B;
+    }
+  }
+
+   @include media-breakpoint-down(sm) {
+      padding: 50px 0;
+     &__swiper {
+       &-wrapper {
+         padding: 30px;
+       }
+     }
+   }
+  }
+
+
+.co-quotation {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+
+  &__title {
+    font-size: 39px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 66px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  @include media-breakpoint-down(sm){
+    flex-direction: column;
+
+    &__title {
+        font-size: 24px;
+        line-height: 36px;
+        margin-top: 30px;
+    }
+  }
+}

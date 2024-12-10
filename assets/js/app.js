@@ -102,6 +102,39 @@ jQuery(document).ready(function ($) {
       },
     },
   });
+  const quotation = new Swiper(".quotation__swiper", {
+    spaceBetween: 42,
+    navigation: {
+      nextEl: ".quotation__swiper__controls .swiper-controls--next",
+      prevEl: ".quotation__swiper__controls .swiper-controls--prev",
+    },
+    pagination: {
+      clickable: true,
+      el: ".quotation__swiper__controls .swiper-pagination",
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 991px
+      991: {
+        slidesPerView: 1,
+        spaceBetween: 42,
+      },
+    },
+  });
   // REMOVE SPINNER
   // setTimeout(() => {
   $('.loader').fadeOut('slow');

@@ -15,12 +15,13 @@
 "components/mobile-menu", 'components/pagination', 'components/social-links', 'components/gallery', 'components/form';
 
 // PAGES
-@import 'pages/home', 'pages/sera', 'pages/quotations', 'pages/praise', 'pages/news', 'pages/gallery', 'pages/projects', 'pages/contact-us';
+@import 'pages/home', 'pages/sera', 'pages/quotations', 'pages/praise', 'pages/news',
+'pages/gallery', 'pages/projects', 'pages/contact-us', 'pages/national', 'pages/scientific-literature', 'pages/poetry-collection';
 
 // LAYOUT
 @import 'layout/header', 'layout/footer';
 
 
 .main {
-  min-height: 100vh;
+  min-height: 80vh;
 }

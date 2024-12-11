@@ -10,14 +10,27 @@
   &__image {}
 
   &__title {
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 500;
     align-self: start;
   }
 
   &__description {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 150%; /* 27px */
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 20px 16px;
+    gap: 16px;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
   }
 }

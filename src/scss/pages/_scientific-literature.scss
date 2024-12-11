@@ -1,0 +1,23 @@
+.scientific-literature {
+  padding: 92px 0;
+  background-color: #183021;
+  position: relative;
+
+  &:after {
+    @extend .section-line;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__co {
+    padding-right: 40px;
+  }
+
+  @include media-breakpoint-down(sm){
+    padding: 20px;
+
+    &__co {
+      padding-right: 0;
+    }
+  }
+}

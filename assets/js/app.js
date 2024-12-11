@@ -147,7 +147,7 @@ jQuery(document).ready(function ($) {
   const headerNav = document.querySelector(".header__mobile-nav");
   topButton?.addEventListener('click', topFunction)
 
-  window.onscroll = function () { scrollFunction(topButton, headerNav) };
+  // window.onscroll = function () { scrollFunction(topButton, headerNav) };
 
   mobileNavMenuRender();
 

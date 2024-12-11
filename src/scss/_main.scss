@@ -12,10 +12,10 @@
 
 // COMPONENT
 @import "components/book", "components/testimonial", "components/swiper", "components/buttons", "components/news",
-"components/mobile-menu", 'components/pagination', 'components/social-links', 'components/gallery';
+"components/mobile-menu", 'components/pagination', 'components/social-links', 'components/gallery', 'components/form';
 
 // PAGES
-@import 'pages/home', 'pages/sera', 'pages/quotations', 'pages/praise', 'pages/news', 'pages/gallery';
+@import 'pages/home', 'pages/sera', 'pages/quotations', 'pages/praise', 'pages/news', 'pages/gallery', 'pages/projects', 'pages/contact-us';
 
 // LAYOUT
 @import 'layout/header', 'layout/footer';

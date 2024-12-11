@@ -1,0 +1,117 @@
+.projects {
+  background-color: #183021;
+  position: relative;
+
+  &__main {
+    &-container {
+      padding: 78px 0;
+      position: relative;
+    }
+
+    &:after {
+      @extend .section-line;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__description {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 25px;
+  }
+
+  &__image {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__header {
+    margin-bottom: 43px;
+
+    &__slogan {
+      font-size: 32px;
+      color: #3E974C;
+      font-weight: 500;
+    }
+
+    &__title {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 150%; /* 48px */
+    }
+  }
+
+  &__day-location {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    margin-bottom: 16px;
+
+    h3 {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+      font-size: 18px;
+
+      .icon {
+        color: #FFAD4E;
+      }
+    }
+  }
+
+  &__filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 74px;
+    margin-bottom: 50px;
+
+    &__title {
+      font-size: 46px;
+      font-weight: 700;
+    }
+  }
+
+  &__bottom {
+    padding-bottom: 50px;
+    &:after {
+      @extend .section-line;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  @include media-breakpoint-down(sm){
+    &__filter {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 30px;
+      margin-bottom: 30px;
+
+      &__title {
+        font-size: 32px;
+        text-align: center;
+        width: 100%;
+      }
+
+      button {
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+      }
+    }
+
+    &__header {
+      margin-bottom: 20px;
+      &__title {
+        font-size: 24px;
+      }
+    }
+  }
+
+}

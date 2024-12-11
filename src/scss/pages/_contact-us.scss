@@ -1,0 +1,37 @@
+.contact-us {
+  background-image: url(../img/gallery-2-bg.png);
+  background-color: #183021;
+  padding: 140px 0;
+
+  &__section {
+    border: 1px solid var(--G500, #297935);
+    padding: 45px;
+    border-radius: 24px;
+    background-color: #294234;
+  }
+
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 26px;
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 26px;
+  }
+
+  &__items {
+    margin-bottom: 26px;
+    &__item {
+      display: flex;
+      align-items: center;
+      column-gap: 13px;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 26px;
+
+    }
+  }
+}

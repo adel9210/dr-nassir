@@ -204,6 +204,10 @@ function stickyMenu() {
   // Get the menu element
   const menu = document.getElementById("menu");
 
+  if (!menu){
+    return ;
+  }
+
 // Get the offset position of the menu
   const sticky = menu.offsetTop + 200;
 

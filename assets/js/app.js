@@ -184,22 +184,38 @@ jQuery(document).ready(function ($) {
 
   mobileNavMenuRender();
 
+  if (window.innerWidth > 991) {
+    stickyMenu()
+  }
+
 });
 
 function scrollFunction(topButton, headerNav) {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    topButton.style.display = "block";
+    // topButton.style.display = "block";
     headerNav.style.top = '0px';
   } else {
-    topButton.style.display = "none";
+    // topButton.style.display = "none";
     // headerNav.style.top = '60px';
   }
+}
 
-  if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
-    $('.event-details__container').css('bottom', '50px');
-  } else {
-    $('.event-details__container').css('bottom', '-250px')
-  }
+function stickyMenu() {
+  // Get the menu element
+  const menu = document.getElementById("menu");
+
+// Get the offset position of the menu
+  const sticky = menu.offsetTop + 200;
+
+// Add the sticky class to the menu when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  window.onscroll = function() {
+    if (window.pageYOffset > sticky) {
+      menu.classList.add("header__navbar--sticky");
+    } else {
+      menu.classList.remove("header__navbar--sticky");
+    }
+  };
+
 }
 
 function topFunction() {

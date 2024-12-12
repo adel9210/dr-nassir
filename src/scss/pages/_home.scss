@@ -55,6 +55,10 @@
   &__swiper {
     margin-top: 80px;
   }
+
+  @include media-breakpoint-down(sm) {
+    padding: 60px 0;
+  }
 }
 
 
@@ -223,6 +227,30 @@
     height: calc(100% + 160px);
     z-index: -1;
   }
+
+  @include media-breakpoint-down(sm){
+    padding: 60px 0;
+
+    &__subtitle {
+      font-size: 20px;
+      line-height: 1.8;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    &__content {
+      &__info {
+        margin-bottom: 30px;
+      }
+
+      &__tab {
+        flex-direction: column;
+      }
+    }
+  }
 }
 
 .gallery {
@@ -276,6 +304,25 @@
       &__item {
         &__image {
           width: 100%;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    &__sections {
+      flex-direction: column;
+    }
+
+    &__content {
+      &__images {
+        display: grid;
+        column-gap: 0;
+        row-gap: 20px;
+        //grid-template-columns: repeat(2, 1fr);
+
+        &__item {
+          margin-top: 0!important;
         }
       }
     }

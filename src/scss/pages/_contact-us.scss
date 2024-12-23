@@ -28,9 +28,13 @@
       display: flex;
       align-items: center;
       column-gap: 13px;
-      font-size: 18px;
-      font-weight: 500;
+      font-size: 14px;
+      //font-weight: 500;
       margin-bottom: 26px;
+
+      .icon {
+        font-size: 18px;
+      }
 
     }
   }

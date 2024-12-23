@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 7px;
+    column-gap: 15px;
     &__item {
         &__link {
             border: 1px solid #AFAFAF;
@@ -10,7 +10,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 4px 9.5px;
+            padding: 8px 15px;
             border-radius: 8px;
             transition: all .3s;
 

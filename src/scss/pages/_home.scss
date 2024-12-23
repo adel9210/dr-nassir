@@ -116,11 +116,12 @@
           content: "";
           width: 15px;
           height: 15px;
-          transform: rotate(-45deg) translateY(50%);
+          transform: rotate(-45deg) translateY(50%) translateX(-50%);
           position: absolute;
-          left: -8px;
-          flex-shrink: 0;
-          border-radius: 3px;
+          left: calc(50% - 7.5px);
+          bottom: 4px;
+          //flex-shrink: 0;
+          //border-radius: 3px;
           background: var(--G500, #297935);
         }
       }
@@ -231,6 +232,22 @@
   @include media-breakpoint-down(sm){
     padding: 60px 0;
 
+    &__container {
+      flex-direction: column;
+    }
+
+    &__tabs {
+      margin-top: 40px;
+      flex-direction: row!important;
+      justify-content: space-between;
+
+      &__icon {
+        &:before {
+          display: none;
+        }
+      }
+    }
+
     &__subtitle {
       font-size: 20px;
       line-height: 1.8;
@@ -244,10 +261,15 @@
     &__content {
       &__info {
         margin-bottom: 30px;
+        margin-top: 0;
       }
 
       &__tab {
         flex-direction: column;
+
+        &__icon {
+            margin-bottom: 20px;
+        }
       }
     }
   }

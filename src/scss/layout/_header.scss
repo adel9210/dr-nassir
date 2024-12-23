@@ -29,7 +29,7 @@
 
   &__mobile-nav {
     display: none;
-    background-color: $secondary-color;
+    background-color: #174E30;
     color: $color-grey;
     // border-top: 1px solid $color-light-grey;
     // border-bottom: 1px solid $color-light-grey;
@@ -384,9 +384,14 @@
 
     &__hero {
       height: 100vh;
-      background-color: #183021;
+      background-image: url(../img/hero-mobile.png);
+      background-position: top;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-color: #195a38;
 
       &__content {
+        justify-content: end;
         &__description {
           font-size: 18px;
         }
@@ -403,9 +408,17 @@
         border-top-left-radius: 0;
 
         &__statistics {
-          flex-direction: column;
+          //flex-direction: column;
+          flex-wrap: wrap;
           &__item {
             margin-bottom: 20px;
+            &__number {
+              font-size: 17px;
+            }
+
+            &__text {
+              font-size: 10px;
+            }
           }
         }
       }

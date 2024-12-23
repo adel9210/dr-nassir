@@ -4,6 +4,7 @@ jQuery(document).ready(function ($) {
 
   const writings = new Swiper(".writings__swiper", {
     spaceBetween: 42,
+    loop: true,
     navigation: {
       nextEl: ".writings__swiper__controls .swiper-controls--next",
       prevEl: ".writings__swiper__controls .swiper-controls--prev",
@@ -37,6 +38,7 @@ jQuery(document).ready(function ($) {
     },
   });
   const testimonials = new Swiper(".testimonials__swiper", {
+    loop: true,
     spaceBetween: 42,
     navigation: {
       nextEl: ".testimonials__swiper__controls .swiper-controls--next",
@@ -70,6 +72,7 @@ jQuery(document).ready(function ($) {
     },
   });
   const news = new Swiper(".news__swiper", {
+    loop: true,
     spaceBetween: 42,
     navigation: {
       nextEl: ".news__swiper__controls .swiper-controls--next",

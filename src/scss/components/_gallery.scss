@@ -5,6 +5,22 @@
   transition: $transition-base;
 
 
+  &--details {
+    //margin-bottom: 20px;
+
+    .co-gallery__title {
+      font-size: 16px;
+    }
+
+    .co-gallery__image-container {
+      height: 120px;
+    }
+
+    .co-gallery__content {
+      padding: 10px;
+    }
+  }
+
   &__image {
     width: 100%;
     height: 100%;
@@ -13,6 +29,8 @@
       transition: all .3s ease-in-out;
       position: relative;
       display: block;
+      border-radius: 16px;
+      overflow: hidden;
 
       &:after {
         content: '';

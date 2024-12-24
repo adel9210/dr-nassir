@@ -120,6 +120,7 @@
   background-color: #294234;
   border-radius: 16px;
   height: 500px;
+  overflow: hidden;
 
 
   &__image {
@@ -165,6 +166,7 @@
 
   &__content {
     padding: 24px;
+    transition: all .3s ease-in-out;
   }
 
   &__title {
@@ -204,8 +206,12 @@
 
   &:hover {
     & .co-news__image-container {
-      height: 150px;
+      //height: 150px;
+      transform: translateY(-40px);
       display: block;
+    }
+    .co-news__content {
+      transform: translateY(-40px);
     }
     .co-news__see-more {
       opacity: 1;

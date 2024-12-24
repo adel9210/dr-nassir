@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/style-rtl.min.css" />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <title>DR-Nassir - Poetry-Details</title>
+</head>
+<body class="body">
+<!-- HEADER SECTION START -->
+<section class="header">
+    <div class="header__navbar header__navbar--top">
+        <div class="container header__navbar--top__container">
+            <div class="header__logo">
+                <img src="../assets/img/logo.svg" alt="Logo">
+            </div>
+            <ul class="header__navbar--top__items">
+                <li class="header__navbar--top__items__item">
+                    <i class="icon icon-calender1 header__navbar--top__items__item__icon"></i>
+                    <span class="header__navbar--top__items__item__text">الأربعاء 18 محرم, 1446</span>
+                </li>
+                <li class="header__navbar--top__items__item">
+                    <i class="icon icon-clock header__navbar--top__items__item__icon"></i>
+                    <span class="header__navbar--top__items__item__text">06:27 م بتوقيت الرياض</span>
+                </li>
+                <li class="header__navbar--top__items__item">
+                    <i class="icon icon-weather header__navbar--top__items__item__icon"></i>
+                    <span class="header__navbar--top__items__item__text">الحرارة 34°C</span>
+                </li>
+            </ul>
+            <ul class="header__navbar--top__actions">
+                <a href="" class="header__navbar--top__actions__lang">English</a>
+                <span class="vertical-separator"></span>
+                <li class="header__navbar--top__actions__action">
+                    <a href="" class="header__navbar--top__actions__action__link">
+                        <i class="icon icon-ear"></i>
+                    </a>
+                </li>
+                <li class="header__navbar--top__actions__action">
+                    <a href="" class="header__navbar--top__actions__action__link">
+                        <i class="icon icon-alpha"></i>
+                    </a>
+                </li>
+                <li class="header__navbar--top__actions__action">
+                    <a href="" class="header__navbar--top__actions__action__link">
+                        <i class="icon icon-circle"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header__navbar header__navbar--bottom">
+        <div class="navbar__links container">
+            <div class="navbar__link">
+                <span class="navbar__text">الرئيسية</span>
+            </div>
+            <div class="navbar__link navbar__link--dropdown">
+                    <span class="navbar__text" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        سيرة ومسيرة
+                        <i class="icon icon-down-arrow"></i>
+
+                    </span>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">السيرة الذاتية</a>
+                    <a class="dropdown-item" href="#">سيرة ومسيرة </a>
+                    <a class="dropdown-item" href="#">مسيرة وطنية</a>
+                </div>
+            </div>
+            <div class="navbar__link navbar__link--dropdown">
+                    <span class="navbar__text" type="button" id="dropdownMenuButton2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        المؤلفات العلمية
+                        <i class="icon icon-down-arrow"></i>
+
+                    </span>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                    <a class="dropdown-item" href="#">السيرة الذاتية</a>
+                    <a class="dropdown-item" href="#">سيرة ومسيرة </a>
+                    <a class="dropdown-item" href="#">مسيرة وطنية</a>
+                </div>
+            </div>
+            <div class="navbar__link navbar__link--dropdown">
+                    <span class="navbar__text" type="button" id="dropdownMenuButton3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        الديوان الشعري
+                        <i class="icon icon-down-arrow"></i>
+
+                    </span>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                    <a class="dropdown-item" href="#">السيرة الذاتية</a>
+                    <a class="dropdown-item" href="#">سيرة ومسيرة </a>
+                    <a class="dropdown-item" href="#">مسيرة وطنية</a>
+                </div>
+            </div>
+            <div class="navbar__link navbar__link--dropdown">
+                    <span class="navbar__text" type="button" id="dropdownMenuButton4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ثناءات عالمية
+                        <i class="icon icon-down-arrow"></i>
+
+                    </span>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                    <a class="dropdown-item" href="#">السيرة الذاتية</a>
+                    <a class="dropdown-item" href="#">سيرة ومسيرة </a>
+                    <a class="dropdown-item" href="#">مسيرة وطنية</a>
+                </div>
+            </div>
+            <div class="navbar__link">
+                <span class="navbar__text">المشاريع العالمية</span>
+            </div>
+            <div class="navbar__link">
+                <span class="navbar__text">معرض الصور</span>
+            </div>
+            <div class="navbar__link">
+                <span class="navbar__text">مكتبة الفيديو</span>
+            </div>
+            <div class="navbar__link">
+                <span class="navbar__text">اقتباسات</span>
+            </div>
+            <div class="navbar__link">
+                <span class="navbar__text">الاخبار</span>
+            </div>
+            <div class="navbar__link">
+                <span class="navbar__text">تواصل معنا</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="header__mobile">
+        <nav class="nav-drill">
+            <a href="#" id="closeMenu">x</a>
+            <ul class="nav-items nav-level-1">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about"> الرئيسية </a>
+                </li>
+                <li class="nav-item nav-expand w-100">
+                    <div class="d-flex align-items-center justify-between w-100">
+                        <a href="javascript:;" class="nav-link flex-grow-1">سيرة ومسيرة</a>
+                        <i class="icon icon-left-arrow pl-3"></i>
+                    </div>
+                    <ul class="nav-expand-content">
+                        <li class="nav-item"><a href="javascript:;" class="nav-link">السيرة الذاتية</a></li>
+                        <li class="nav-item"><a href="javascript:;" class="nav-link">سيرة ومسيرة</a></li>
+                        <li class="nav-item"><a href="javascript:;" class="nav-link">مسيرة وطنية</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item nav-expand">
+                    <div class="d-flex align-items-center justify-between w-100">
+                        <a href="javascript:;" class="nav-link flex-grow-1">المؤلفات العلمية</a>
+                        <i class="icon icon-left-arrow pl-3"></i>
+                    </div>
+                    <ul class="nav-expand-content">
+                        <li class="nav-item"><a href="javascript:;" class="nav-link">السيرة الذاتية</a></li>
+                        <li class="nav-item"><a href="javascript:;" class="nav-link">سيرة ومسيرة</a></li>
+                        <li class="nav-item"><a href="javascript:;" class="nav-link">مسيرة وطنية</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://google.com" target="_blank"> تعرف علينا  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#involved">رسالتنا </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#agenda"> أهدافنا </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallery"> الخدمات القانونية  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sponsors"> الأستشارات القانونية  </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header__mobile-nav">
+        <div class="
+            container
+            header__mobile-nav__container
+            d-flex
+            align-items-center
+            justify-content-between
+          ">
+            <div class="d-flex align-items-center justify-content-between">
+                <a href="#" class="header__mobile-nav__burger-menu" id="openMenu">
+                    <i class="icon icon-menu"></i>
+                </a>
+                <a href="#" class="header__mobile-nav__logo">
+                    <img src="../assets/img/logo.png" alt="Logo" />
+                </a>
+            </div>
+            <a href="" class="d-flex align-items-center text-light" style="column-gap: 12px">
+                <i class="icon icon-site"></i>
+                English
+            </a>
+        </div>
+    </div>
+
+
+    <div class="header--inner">
+        <div class="container">
+            <h2 class="header--inner__title">   الديوان الشعري</h2>
+            <ul class="header__breadcrumb">
+                <li class="header__breadcrumb__item">
+                    <a href="" class="header__breadcrumb__item__link">الرئيسية</a>
+                </li>
+                <i class="icon icon-left-arrow"></i>
+                <li class="header__breadcrumb__item">
+                    <a href="" class="header__breadcrumb__item__link">الديوان الشعري</a>
+                </li>
+                <i class="icon icon-left-arrow"></i>
+                <li class="header__breadcrumb__item">
+                    <a href="" class="header__breadcrumb__item__link"> أبيات القصيدة</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+<!-- HEADER SECTION END -->
+
+<section class="main poetry-collection">
+    <div class="container">
+       <div class="row">
+           <div class="col-md-2">
+               <a href="">
+                   <img src="../assets/img/sponsor.png" alt="Sponsor">
+               </a>
+           </div>
+           <div class="col-md-2">
+               <a href="">
+                   <img src="../assets/img/sponsor.png" alt="Sponsor">
+               </a>
+           </div>
+           <div class="col-md-2">
+               <a href="">
+                   <img src="../assets/img/sponsor.png" alt="Sponsor">
+               </a>
+           </div>
+           <div class="col-md-2">
+               <a href="">
+                   <img src="../assets/img/sponsor.png" alt="Sponsor">
+               </a>
+           </div>
+           <div class="col-md-2">
+               <a href="">
+                   <img src="../assets/img/sponsor.png" alt="Sponsor">
+               </a>
+           </div>
+           <div class="col-md-2">
+               <a href="">
+                   <img src="../assets/img/sponsor.png" alt="Sponsor">
+               </a>
+           </div>
+       </div>
+
+    </div>
+</section>
+
+<!-- FOOTER SECTION START -->
+<footer class="footer text-light py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="../assets/img/logo.svg" alt="Logo" class="footer__logo mb-3">
+                <p class="footer__description">
+                    ناصر بن مسفر القرشي الزهراني عالم وأديب وشاعر سعودي،
+                    وأمين مجلس إدارة المعارض والمتاحف الدولية للسيرة النبوية والحضارة الإسلامية
+                </p>
+            </div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5 class="footer__title">ثنائات عالمية</h5>
+                        <ul class="footer__list list-unstyled">
+                            <li><a href="#" class="text-light">أصحاب الفخامة و السمو (الرؤساء -الأمراء)</a></li>
+                            <li><a href="#" class="text-light">هيئة كبار العلماء وأئمة الحرم</a></li>
+                            <li><a href="#" class="text-light">أصحاب المعالي والفضيلة مفتو بعض الدول</a></li>
+                            <li><a href="#" class="text-light">أصحاب الفضيلة العلماء</a></li>
+                            <li><a href="#" class="text-light">شخصيات نسائية معتبرة وعلمية</a></li>
+                            <li><a href="#" class="text-light">أصحاب المعالي وكبار الشخصيات</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="footer__title">سيرة ومسيرة</h5>
+                        <ul class="footer__list list-unstyled">
+                            <li><a href="#" class="text-light">السيرة الذاتية</a></li>
+                            <li><a href="#" class="text-light">محطات حياتة</a></li>
+                            <li><a href="#" class="text-light">مسيرة وطنية</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="footer__title">المؤلفات العلمية</h5>
+                        <ul class="footer__list list-unstyled">
+                            <li><a href="#" class="text-light">الموسوعات والمؤلفات</a></li>
+                            <li><a href="#" class="text-light">تعرف بأهم الموسوعات والمؤلفات</a></li>
+                            <li><a href="#" class="text-light">الأرشادات والتحكيم</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="footer__title">المركز الأعلامي</h5>
+                        <ul class="footer__list list-unstyled">
+                            <li><a href="#" class="text-light">اخر الأخبار</a></li>
+                            <li><a href="#" class="text-light">معرض الصور</a></li>
+                            <li><a href="#" class="text-light">مكتبة الفديوهات</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="footer__copyright">
+    <p>جميع الحقوق محفوظة للموقع الرسمي لفضيلة الشيخ الدكتور ناصر بن مسفر القرشي الزهراني © 2024</p>
+</div>
+<!-- FOOTER SECTION END -->
+
+
+
+<script src="../assets/js/jquery-3.4.1.min.js"></script>
+<script src="../assets/js/popper.min.js"></script>
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/swiper.min.js"></script>
+<script src="../assets/js/jquery.fancybox.min.js"></script>
+<script src="../assets/js/wow.min.js"></script>
+<script src="../assets/js/jquery.flipper-responsive.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
+
